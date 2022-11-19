@@ -5,7 +5,7 @@ optimized images for Memos
 由于Memos把图片保存在sqlite数据库中，我习惯直接从手机上传图片，当原图非常大且使用时间久了图片非常多的时候，数据库会变得很大。
 这个脚本使用tinify的API对数据库中的图片进行压缩
 
-使用这个脚本需要python环境,在脚本中替换自己的YOUR_API_KEY 和 memos库路径
+使用这个脚本需要python环境,在compressImage.py脚本中替换自己的YOUR_API_KEY 和 memos库路径
 ```python
 tinify.key = "YOUR_API_KEY"
 dbname='/data/memos/memos_prod.db'
@@ -20,12 +20,12 @@ pip install --upgrade tinify
 
 执行：
 ```sh
-python ./compress_db.py
+python ./compressImage.py
 
 ```
 执行效果：
 ```sh
-# python ./compress_db.py
+# python ./compressImage.py
 EA722A1C-0EDA-4FFE-B3E5-A845EFA5EE21_CMP.jpg 505479 196277
 1E3422D5-F3DC-4D98-B561-FEC079141E0A_CMP.jpg 88050 32996
 DC631A8F-16A0-4C9D-91A0-677F73EFCBD4_CMP.jpg 380299 136024
