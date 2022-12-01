@@ -16,7 +16,7 @@ def compressImage(dbName):
     cursor.close()
     for r in records:
         id=r[0]
-        sourceImageName=r[1]
+        sourceImageName=r[1] 
         fileHead=os.path.splitext(sourceImageName)[0]
         fileEx=os.path.splitext(sourceImageName)[-1]
         destImageName=fileHead + '_CMP' + fileEx
